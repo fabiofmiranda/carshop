@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout-style.css">
+    <title>Checkout - Car Shop</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+                <h1>Car Shop</h1>
+            </div>
+            <div class="header-right">
+                <a href="#products">Produtos</a>
+                <a href="#cart">Carrinho</a>
+                <a href="#about-us">Quem Somos</a>
+                <a href="#contact">Fale Conosco</a>
+            </div>
+           
+        </div>
+        <!--<div class="cart-icon" onclick="openCart()">🛒</div> -->
+    </header>
+
+    <section class="product-section" id="products">      
+        <div class="product">
+            <div class="product-info">
+                <img src="img/corola.jpg" alt="Product 1">
+                <h3>Carro Modelo 1</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/gol.jpg" alt="Product 1">
+                <h3>Carro Modelo 2</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/ecosport.jpg" alt="Product 1">
+                <h3>Carro Modelo 3</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/fiat_palio.jpg" alt="Product 1">
+                <h3>Carro Modelo 4</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/gol-mi.jpg" alt="Product 1">
+                <h3>Carro Modelo 5</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/hyundai_ix35.jpg" alt="Product 1">
+                <h3>Carro Modelo 6</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/renault_sandero.jpg" alt="Product 1">
+                <h3>Carro Modelo 7</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="img/uno.jpg" alt="Product 1">
+                <h3>Carro Modelo 8</h3>
+                <p>Descrição do carro modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>R$ 50,000</span>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </section>
+    <section class="cart-section" id="cart">
+        <h2>Carrinho</h2>
+        <div id="cart-container">
+            <!-- Produtos selecionados serão adicionados aqui dinamicamente -->
+        </div>
+        <div class="total">
+            <span>Total: R$ <span id="total-amount">0.00</span></span>
+        </div>
+        <div class="cart-buttons">
+            
+
+            <button onclick="checkout()">Finalizar Compra</button>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+        </div>
+    </section>
+
+    <section class="about-us-section" id="about-us">
+        <h2>Quem Somos</h2>
+        <p>Somos uma loja dedicada a oferecer a melhor seleção de carros para atender às suas necessidades.</p>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Endereço</h3>
+                <p>Rua ABC, 123</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>contato@exemplo.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>Telefone</h3>
+                <p>(11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Envie-nos uma Mensagem</h3>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div><!-- Conteúdo da seção "Fale Conosco" -->
+    </section>
+
+    <footer>
+        <!-- Adicione elementos do rodapé aqui -->
+    </footer>
+
+    <script src="checkout-script.js"></script>
+</body>
+</html>

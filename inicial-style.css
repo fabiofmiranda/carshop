@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/inicial-carro.jpeg'); /* Substitua 'car-background.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /*background-color: #333;*/
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+p{
+    color:white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.presentation-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+.login-section {
+     width: 20px;
+     margin-left: 980px;
+    background-color: aliceblue;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+section {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+   /* background-color: #5f68e9;
+    color: white;*/
+   
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+   
+
+}
+
+/*button:hover {
+    background-color: #45a049;
+}
+/* Adicione estilos adicionais conforme necessário */
+
+/* O restante do CSS permanece o mesmo, apenas adicione a seção about-us-section */
+.presentation-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+.about-us-section {
+    /*width: 80%;*/
+    margin: 0px auto;
+    /*background-color: white;*/
+    padding: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    text-align: left;
+}.about-us-section h2 {
+    color: #333;
+}
+
+.about-us-section p {
+    color: #666;
+}
+@media only screen and (max-width: 600px) {
+    .main-content {
+        padding: 10px;
+    }
+    .presentation-text {
+        max-width: 100%;
+    }
+    .about-us-section {
+        width: 90%;
+    }
+    @media screen and (max-width: 768px) {
+        header {
+            flex-direction: column; /* Colocar os itens um abaixo do outro em telas menores */
+            text-align: center;
+        }
+    
+        .header-left {
+            margin-bottom: 10px; /* Espaço entre o logo e os botões */
+        }
+    
+        .header-right {
+            flex-direction: row; /* Colocar os botões lado a lado em telas menores */
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+        }
+    
+        .header-right a {
+            margin: 0 10px; /* Espaço entre os botões */
+        }
+    }
+}
+
