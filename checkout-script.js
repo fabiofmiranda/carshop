@@ -37,8 +37,9 @@ function updateCart() {
 }
 
 function checkout() {
-    alert("Compra finalizada! Total: R$ " + total.toFixed(3));
-    // Lógica adicional para enviar dados ao servidor, etc.
+    alert("Compra finalizada! Total: R$ " + total.toFixed(2));
+    // Redirecionar para a página de cadastro
+    window.location.href = "registration.html";
     clearCart();
 }
 

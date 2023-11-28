@@ -1,38 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
-}
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+                background-image: url('img/fachando-negocio.jpg'); /* Substitua pelo caminho da sua imagem */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                /*color: #fff; */
+            }
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
 
-h1 {
-    text-align: center;
-}
-
-#registration-form,
-#login-form {
-    width: 300px;
-    margin: 20px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+    
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+            }
+    
+            button {
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+    
+            button:hover {
+                background-color: #45a049;
+            }
+    
+            #contrato {
+                display: none;
+                margin-top: 20px;
+                width: 21cm;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #000;
+                background: rgba(255, 255, 255, 0.9); /* Cor branca com opacidade de 0.9 */
+            }
+    
+            #contrato h2 {
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            #contrato p {
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+    
+            #contrato strong {
+                font-weight: bold;
+            }
+    
+            #contrato span {
+                font-style: italic;
+            }
+        

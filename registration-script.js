@@ -1,41 +1,39 @@
-let users = [];
+function preencherContrato() {
+    // Obter valores do formulário
+    var nome = document.getElementById("nome").value;
+    var cpf = document.getElementById("cpf").value;
+    var endereco = document.getElementById("endereco").value;
 
-function register() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    var marca = prompt("Digite a marca do veículo:");
+    var modelo = prompt("Digite o modelo do veículo:");
+    var ano = prompt("Digite o ano do veículo:");
+    var placa = prompt("Digite a placa do veículo:");
+    var chassi = prompt("Digite o chassi do veículo:");
 
-    // Verifica se o usuário já existe
-    const existingUser = users.find(user => user.username === username);
-    if (existingUser) {
-        alert('Usuário já cadastrado. Escolha outro nome de usuário.');
-        return;
-    }
+    var valor = prompt("Digite o valor total da venda:");
+    var formaPagamento = prompt("Digite a forma de pagamento:");
+    var diasTransferencia = prompt("Digite o prazo para a transferência de propriedade:");
+    
+    var cidade = prompt("Digite a cidade para o foro:");
 
-    // Simula o armazenamento seguro da senha (não use em produção)
-    const hashedPassword = btoa(password);
+    // Preencher o contrato
+    document.getElementById("nomeContrato").innerText = nome;
+    document.getElementById("cpfContrato").innerText = cpf;
+    document.getElementById("enderecoContrato").innerText = endereco;
 
-    users.push({ username, password: hashedPassword });
+    document.getElementById("marcaContrato").innerText = marca;
+    document.getElementById("modeloContrato").innerText = modelo;
+    document.getElementById("anoContrato").innerText = ano;
+    document.getElementById("placaContrato").innerText = placa;
+    document.getElementById("chassiContrato").innerText = chassi;
 
-    alert('Cadastro concluído com sucesso! Faça o login para continuar.');
-    clearRegistrationForm();
-}
+    document.getElementById("valorContrato").innerText = valor;
+    document.getElementById("formaPagamentoContrato").innerText = formaPagamento;
+    document.getElementById("diasTransferenciaContrato").innerText = diasTransferencia;
 
-function login() {
-    const username = document.getElementById('login-username').value;
-    const password = document.getElementById('login-password').value;
+    document.getElementById("cidadeContrato").innerText = cidade;
 
-    // Simula a busca do usuário no banco de dados
-    const user = users.find(user => user.username === username);
-
-    if (user && user.password === btoa(password)) {
-        alert('Login bem-sucedido! Redirecionando para a página de checkout.');
-        window.location.href = 'checkout.html';
-    } else {
-        alert('Usuário ou senha incorretos. Tente novamente.');
-    }
-}
-
-function clearRegistrationForm() {
-    document.getElementById('username').value = '';
-    document.getElementById('password').value = '';
+    // Exibir o contrato preenchido
+    document.getElementById("formulario").style.display = "none";
+    document.getElementById("contrato").style.display = "block";
 }
