@@ -7,6 +7,13 @@
     <title>Registration</title>
 </head>
 <body>
+    <div id="voltar-produto">
+        <button onclick="voltarParaProdutos()">Voltar para Produtos</button>
+    </div>
+   
+    <div id="contrato-container">
+        <div id="contrato-fundo"></div>
+
     <form id="formulario">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
@@ -17,9 +24,11 @@
         <label for="endereco">Endereço:</label>
         <textarea id="endereco" name="endereco" required></textarea>
 
-        <button type="button" onclick="preencherContrato()">Finalizar</button>
+        <div id="botoes-contrato">
+            <button onclick="preencherContrato()">Gerar Contrato</button>
+        </div>
     </form>
-
+    
     <div id="contrato">
         <h2>CONTRATO DE COMPRA E VENDA DE VEÍCULO DIGITAL</h2>
 
@@ -56,11 +65,17 @@
                 [Assinatura Eletrônica do Vendedor]</p>
         
         <p><strong>COMPRADOR:</strong><br>
-                [Assinatura Eletrônica do Comprador]</p>   
-    </div>
-       
-    
+                [Assinatura Eletrônica do Comprador]</p>  
 
-    <script src="registration-script.js"></script>
+                <div id="botoes-contrato">
+                    <button onclick="imprimirContrato()">Imprimir Contrato</button>
+                    <button onclick="enviarContrato()">Enviar Contrato para o Vendedor</button>
+                </div>
+    </div>          
+   
+    </div>
+    
+</div>
+<script src="registration-script.js"></script>
 </body>
 </html>

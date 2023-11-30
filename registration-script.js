@@ -36,4 +36,18 @@ function preencherContrato() {
     // Exibir o contrato preenchido
     document.getElementById("formulario").style.display = "none";
     document.getElementById("contrato").style.display = "block";
+
+    
+}
+function imprimirContrato() {
+    window.print();
+}
+
+function enviarContrato() {
+    // Lógica para enviar o contrato para o vendedor
+    alert("Contrato enviado para o vendedor!");
+}
+function voltarParaProdutos() {
+    // Lógica para redirecionar para a tela de produtos
+    window.location.href = 'checkout.html';
 }
