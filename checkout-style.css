@@ -229,4 +229,9 @@ img {
             margin: 0 10px; /* Espaço entre os botões */
         }
     }
+    @media only screen and (max-width: 768px) {
+        .about-us-section {
+            margin: 20px; /* Ajuste de margem para telas menores */
+        }
+    }
 }

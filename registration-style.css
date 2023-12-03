@@ -12,7 +12,11 @@ body {
     color: #161515; /* Cor do texto para contrastar com a imagem de fundo */
 }
 
+
+
 form {
+    padding: 10px;
+   /* background-color: rgba(255, 255, 255, 0.5);*/
     max-width: 600px;
     margin: 0 auto;
 }
@@ -49,6 +53,7 @@ button:hover {
     padding: 20px;
     border: 1px solid #000;
     background-color: #dad7d7;
+    margin-top: 70px;
 }
 
 #contrato h2 {
@@ -71,15 +76,29 @@ button:hover {
 }
 
 
-#botoes-contrato {
+#botao-finalizar {
+    display: flex; 
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se não houver espaço suficiente */
+    margin-top: 20p
+
+}
+#botoes-contrato {
+    display: flex; 
+    text-align: center;
+    margin-top: 20px; justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se não houver espaço suficiente */
+    margin-top: 20p;
+    display: none; /* Esconde os botões de imprimir e salvar contrato */
 }
 
 #botoes-contrato button {
     margin: 10px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #166418;
     color: white;
     border: none;
     border-radius: 4px;
@@ -94,4 +113,13 @@ button:hover {
     top: 10px;
     right:10px;
     padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+    #contrato {
+        width: 90%;
+    }
+
+    #botoes-contrato button {
+        padding: 8px;
+    }
 }

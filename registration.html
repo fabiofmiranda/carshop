@@ -7,10 +7,11 @@
     <title>Registration</title>
 </head>
 <body>
+    
     <div id="voltar-produto">
         <button onclick="voltarParaProdutos()">Voltar para Produtos</button>
     </div>
-   
+
     <div id="contrato-container">
         <div id="contrato-fundo"></div>
 
@@ -24,7 +25,7 @@
         <label for="endereco">Endereço:</label>
         <textarea id="endereco" name="endereco" required></textarea>
 
-        <div id="botoes-contrato">
+        <div id="botao-finalizar">
             <button onclick="preencherContrato()">Gerar Contrato</button>
         </div>
     </form>
@@ -67,11 +68,15 @@
         <p><strong>COMPRADOR:</strong><br>
                 [Assinatura Eletrônica do Comprador]</p>  
 
-                <div id="botoes-contrato">
+               <!-- <div id="botoes-contrato"> 
                     <button onclick="imprimirContrato()">Imprimir Contrato</button>
                     <button onclick="enviarContrato()">Enviar Contrato para o Vendedor</button>
-                </div>
+                </div> -->
     </div>          
+    <div id="botoes-contrato">
+        <button onclick="imprimirContrato()">Imprimir Contrato</button>
+        <button onclick="enviarContrato()">Enviar Contrato para o Vendedor</button>
+    </div>
    
     </div>
     

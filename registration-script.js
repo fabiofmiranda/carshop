@@ -36,6 +36,7 @@ function preencherContrato() {
     // Exibir o contrato preenchido
     document.getElementById("formulario").style.display = "none";
     document.getElementById("contrato").style.display = "block";
+    document.getElementById("botoes-contrato").style.display = "block";
 
     
 }
