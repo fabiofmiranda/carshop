@@ -58,7 +58,7 @@ body {
     overflow: hidden;
     max-width: 400px;
     width: 100%;
-    margin: 20px; /* Adicionando margem para espaçamento vertical */
+    margin: 20px; 
     margin-bottom: 10%;
   }
   
@@ -67,7 +67,7 @@ body {
   }
 
   .background-image {
-    background-image: url('img/fachando-negocio.jpg');
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
