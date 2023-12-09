@@ -65,7 +65,7 @@ var firebaseConfig = {
         alert("Cadastro bem-sucedido!");
       })
       .catch(function(error) {
-        alert("Erro ao cadastrar: " + error.message);
+        alert("Erro ao cadastrar");
       });
   }
   function redirectToCheckout() {
