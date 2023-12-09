@@ -51,7 +51,7 @@ var firebaseConfig = {
         redirectToCheckout();
       })
       .catch(function(error) {
-        alert("Erro ao fazer login: " + error.message);
+        alert("Erro ao fazer login");
       });
   }
   
